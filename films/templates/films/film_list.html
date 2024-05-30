@@ -1,0 +1,16 @@
+<!-- films/templates/films/film_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmlər</title>
+</head>
+<body>
+    <h1>Filmlər</h1>
+    <ul>
+        {% for film in films %}
+            <li>{{ film.title }} - {{ film.director }} ({{ film.release_year }}) - {{ film.duration }} dəqiqə</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
